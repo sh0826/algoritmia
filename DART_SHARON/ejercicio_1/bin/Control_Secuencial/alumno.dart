@@ -21,5 +21,6 @@ double promedioParciales = calificacionParciales * 0.55;
 double porcentajeExamenFinal = examenFinal * 0.30;
 double porcentajeTrabajoFinal = trabajoFinal * 0.15;
 double calificacionFinal = promedioParciales + porcentajeExamenFinal + porcentajeTrabajoFinal;
+
 print("\n===== Resultado de tu calificacion bro =====");
 print("tu calificacion final de computacion es de: $calificacionFinal");  }
