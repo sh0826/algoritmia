@@ -6,14 +6,20 @@
 import 'dart:io';
 
 void main(){
-  print("Ingresa tu primera calificacion del parcial");
-  double parcial1 = double.parse(stdin.readLineSync()!);
-  print("Ingresa tu segunda calificacion del parcial");
-  double parcial2 = double.parse(stdin.readLineSync()!);
-  print("Ingresa tu tercera calificacion del parcial");
-  double parcial3 = double.parse(stdin.readLineSync()!);
-  print("Ingresa tu calificacion del examen final");
-  double examenFinal = double.parse(stdin.readLineSync()!);
-  print("Ingresa tu calificacion del trabajo final");
-  double trabajoFinal = double.parse(stdin.readLineSync()!);
-}
+print("Ingresa tu primera calificacion del parcial: ");
+double parcial1 = double.parse(stdin.readLineSync()!);
+print("Ingresa tu segunda calificacion del parcial: ");
+double parcial2 = double.parse(stdin.readLineSync()!);
+print("Ingresa tu tercera calificacion del parcial: ");
+double parcial3 = double.parse(stdin.readLineSync()!);
+print("Ingresa tu calificacion del examen final: ");
+double examenFinal = double.parse(stdin.readLineSync()!);
+print("Ingresa tu calificacion del trabajo final: ");
+double trabajoFinal = double.parse(stdin.readLineSync()!);
+double calificacionParciales = (parcial1 + parcial2 + parcial3)/3;
+double promedioParciales = calificacionParciales * 0.55;
+double porcentajeExamenFinal = examenFinal * 0.30;
+double porcentajeTrabajoFinal = trabajoFinal * 0.15;
+double calificacionFinal = promedioParciales + porcentajeExamenFinal + porcentajeTrabajoFinal;
+print("\n===== Resultado de tu calificacion bro =====");
+print("tu calificacion final de computacion es de: $calificacionFinal");  }
