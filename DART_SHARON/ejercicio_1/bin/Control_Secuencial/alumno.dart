@@ -16,6 +16,7 @@ print("Ingresa tu calificacion del examen final: ");
 double examenFinal = double.parse(stdin.readLineSync()!);
 print("Ingresa tu calificacion del trabajo final: ");
 double trabajoFinal = double.parse(stdin.readLineSync()!);
+
 double calificacionParciales = (parcial1 + parcial2 + parcial3)/3;
 double promedioParciales = calificacionParciales * 0.55;
 double porcentajeExamenFinal = examenFinal * 0.30;
