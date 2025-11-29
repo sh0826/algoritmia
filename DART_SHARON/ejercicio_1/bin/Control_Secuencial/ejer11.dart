@@ -48,5 +48,4 @@ print("Ingresa tu nombre bro: ");
   print("Asignaciones : $totalAsignaciones");
   print("Deducciones: $totalDeducciones");
   print("Sueldo neto: $sueldoNeto");
-
 }
