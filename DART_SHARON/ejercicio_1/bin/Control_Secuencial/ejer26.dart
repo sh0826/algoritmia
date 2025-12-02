@@ -19,6 +19,5 @@ void main() {
   } else {
     resultado = (A - B) * (A - B) * (A - B) / D;
   }
-
   print("Resultado: $resultado");
 }
